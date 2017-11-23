@@ -1,4 +1,4 @@
-describe('cookie test',function(){
+describe('Cookie test',function(){
   describe('set,find,delete',function(){
     it('set cookie key is "test",value is "123456",expries is "100000"ms',function(){
       feu.cookie.set('test','123456',100000)

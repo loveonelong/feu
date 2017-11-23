@@ -1,7 +1,7 @@
 const cookie = require('./src/cookie')
-const onPasteTextOnly = require('./src/onPasteTextOnly')
+const paste = require('./src/paste')
 
 module.exports = {
   cookie,
-  onPasteTextOnly
+  paste
 }

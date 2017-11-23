@@ -6,7 +6,7 @@
  * @desc 仅粘贴纯文本内容
  * @param {HtmlElement} el - 需要做改处理的dom元素
  */
-const onPasteTextOnly = (el) => {
+const pasteTextOnly = (el) => {
   
     try {
       /**
@@ -62,4 +62,4 @@ const onPasteTextOnly = (el) => {
 /**
  * @desc exports
  */
-module.exports =  onPasteTextOnly
+module.exports =  pasteTextOnly
