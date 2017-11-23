@@ -1,4 +1,5 @@
 # FEU
+
 > Font-End Utils 前端工具类库
 
 <p>
@@ -30,39 +31,43 @@
 <script src="feu.min.js"></script>
 <script>
   feu.doSomething()
-</script>
+</script>引入项目
 ```
 
 ### Npm
 
-安装（注意，仅能用于前端项目）
+Install（注意，仅能用于前端项目）
 ```shell
 $ npm install --save-dev feu
 ```
-引入项目
+
+include
 ```javascript
 var feu = require('feu')
 feu.doSomething()
 ```
+
 如果你在项目里使用了es6/7语法，并配置了babel，推荐下面的写法，以便于获得IDE的提示
 ```javascript
 const feu = require('feu/main')
 feu.doSomething()
 ```
+
 ## Dev
 
-### 构建
+### Build
 
 ```shell
 $ npm run build
 ```
-### 测试
+
+### Test
 
 > mocha-phantomjs、chai
 ```shell
 $ npm run test
 ```
+
 ## Doc
 
 *稍后更新
-
