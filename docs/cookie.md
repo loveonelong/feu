@@ -2,6 +2,10 @@
 
 ## feu.cookie.set(key,value,expires)
 
+- Desc
+
+  设置cookie
+
 - Params
 
   - `key` {String}  键

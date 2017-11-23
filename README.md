@@ -23,10 +23,11 @@
 - 目前兼容有可能仅限于chrome 40+
 - 尽可能使用最新的版本！
 
-## Doc
+## Docs
 
 Language:
-  - Chinese [FEU-中文文档](https://loveonelong.github.io/feu)
+
+  - [Chinese-中文文档](https://loveonelong.github.io/feu)
 
 ## Usage
 
@@ -43,17 +44,20 @@ Language:
 ### Npm
 
 Install（注意，仅能用于前端项目）
+
 ```shell
 $ npm install --save-dev feu
 ```
 
-include
+Include
+
 ```javascript
 var feu = require('feu')
 feu.doSomething()
 ```
 
 如果你在项目里使用了es6/7语法，并配置了babel，推荐下面的写法，以便于获得IDE的提示
+
 ```javascript
 const feu = require('feu/main')
 feu.doSomething()
@@ -70,6 +74,7 @@ $ npm run build
 ### Test
 
 > mocha-phantomjs、chai
+
 ```shell
 $ npm run test
 ```
