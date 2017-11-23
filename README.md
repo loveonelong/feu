@@ -17,12 +17,18 @@
 </a>
 </p>
 
-- 这还是一个非常简单的版本
+!> 这还是一个非常简单的版本,api可能会随时有变动,可以拿来学习参考
+
 - Version Status: Alpha
 - 目前兼容有可能仅限于chrome 40+
-- 尽可能使用相同大版本号的最新的版本！
+- 尽可能使用最新的版本！
 
-## Use
+## Doc
+
+Language:
+  - Chinese [FEU-中文文档](https://loveonelong.github.io/feu)
+
+## Usage
 
 ### Browser
 
@@ -67,7 +73,3 @@ $ npm run build
 ```shell
 $ npm run test
 ```
-
-## Doc
-
-*稍后更新

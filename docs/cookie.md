@@ -2,53 +2,53 @@
 
 ## feu.cookie.set(key,value,expires)
 
-  - Params
+- Params
 
-    - `key` {String}  键
-    - `value` {String}  值
-    - `expires` {Number}  有效时长
+  - `key` {String}  键
+  - `value` {String}  值
+  - `expires` {Number}  有效时长
 
-    !> 注意有效时长单位为ms
+  !> 注意有效时长单位为ms
 
-  - Usage
+- Usage
 
-    ```javascript
-    feu.cookie.set('name','val',10000) // 设置一个有效期10s的cookie
-    ```
+  ```javascript
+  feu.cookie.set('name','val',10000) // 设置一个有效期10s的cookie
+  ```
 
 ## feu.cookie.get(key)
 
-  - Desc
+ - Desc
 
-    获取cookie
+   获取cookie
 
-  - Params
+- Params
 
-   - `key` {String} 键
+  - `key` {String} 键
 
-  - Returns
+- Returns
 
-    - {String} 返回相应的值，如果没找到返回`''`
+  - {String} 返回相应的值，如果没找到返回`''`
 
-  - Usage
+- Usage
 
-    ```javascript
-    feu.cookie.get('name')
-    ```
+  ```javascript
+  feu.cookie.get('name')
+  ```
 
 
 ## feu.cookie.delete(key)
 
-  - Desc
+- Desc
 
-    删除某个cookie
+  删除某个cookie
 
-  - Params
+- Params
 
-    - `key` {String} 键
+  - `key` {String} 键
 
-  - Usage
+- Usage
 
-    ```javascript
-    feu.cookie.delete('name')
-    ```
+  ```javascript
+  feu.cookie.delete('name')
+  ```
