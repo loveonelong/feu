@@ -9,7 +9,9 @@
 - Params
 
   - `key` {String}  键
+
   - `value` {String}  值
+  
   - `expires` {Number}  有效时长
 
   !> 注意有效时长单位为ms

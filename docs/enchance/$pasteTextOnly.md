@@ -1,6 +1,4 @@
-# paste
-
-## feu.paste.textOnly(el)
+# feu.$pasteTextOnly(el)
 
 - Desc
 

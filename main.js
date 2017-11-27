@@ -1,7 +1,13 @@
+/* base */
 const cookie = require('./src/cookie')
-const paste = require('./src/paste')
+
+/* enchance */
+const $fullLengthImg = require('./src/enchance/fullLengthImg')
+const $pasteTextOnly = require('./src/enchance/pasteTextOnly')
+
 
 module.exports = {
   cookie,
-  paste
+  $fullLengthImg,
+  $pasteTextOnly
 }
