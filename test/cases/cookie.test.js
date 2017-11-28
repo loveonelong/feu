@@ -1,16 +1,18 @@
-describe('Cookie test', function () {
-  describe('set,find,delete', function () {
-    it('set cookie key is "test",value is "123456",expries is "100000"ms', function () {
+describe('cookie test', function () {
+  describe('feu.cookie', function () {
+    it('set cookie without error, key is "test",value is "123456",expries is "100000"ms', function () {
       feu.cookie.set('test', '123456', 100000)
     })
-    it('find cookie "test" shoud equal "123456"', function () {
-      feu.cookie.get('test').should.equal('123456')
+
+    it('find cookie "test" to equal "123456"', function () {
+      expect(feu.cookie.get('test')).to.equal('123456')
     })
-    it('delete cookie "test"', function () {
+
+    it('deleting cookie "test" without error,then find it to equal ""', function () {
+      // delete
       feu.cookie.delete('test')
-    })
-    it('find cookie "test" shoud equal "" after delete it', function () {
-      feu.cookie.get('test').should.equal('')
+
+      expect(feu.cookie.get('test')).to.equal('')
     })
   })
 })

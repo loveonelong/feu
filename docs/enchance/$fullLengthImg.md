@@ -2,9 +2,10 @@
 
 - Desc
 
-  完整的显示一张图片(居中)
-  * 不超出el大小，按原比例
-  * 超出el大小时，缩放
+  有时候在给定的盒子大小里希望看到一张完整的照片
+  * 居中
+  * 不超出盒子大小，按原比例
+  * 超出盒子大小时，缩放，其中一边撑满盒子
 
 - param
 
@@ -20,7 +21,8 @@
 - Usage
   ```javascript
     let foo = document.getElementById('#foo')
-    feu.$fullLengthImg(foo, 'http://foo.com/bar.jpg', (el,imgObj)=>{
+    feu.$fullLengthImg(foo, 'http://bar', (el, imgObj) => {
       // do...
+      // el === foo , imgObj 为已经加载好的图片对象
     })
   ```

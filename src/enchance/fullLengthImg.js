@@ -17,12 +17,12 @@ const fullLengthImg = (el, src, callback) => {
 
   // onload事件触发
   mImage.onload = function () {
+
+    // 根据宽/高比，计算zoom
     let zoom = mImage.width / mImage.height > w / h ? mImage.width / w : mImage.height / h
-    if (zoom > 1) {
-      el.style.background = `url('${src}') no-repeat center / contain`
-    } else {
-      el.style.background = `url('${src}') no-repeat center/ auto`
-    }
+
+    // 根据zoom设置background
+    el.style.background = `url('${src}') no-repeat center / ${zoom > 1 ? 'contain' : 'auto'}`
 
     // callback
     if (typeof callback === 'function') callback(el, mImage)
