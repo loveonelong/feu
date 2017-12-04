@@ -8,7 +8,7 @@ const rootPath = path.resolve(__dirname, '../')
 const config = {
   entry: path.resolve(rootPath, 'main.js'),
   output: {
-    filename: `${package.name}-${package.version}.min.js`,
+    filename: `${package.name}.min.js`,
     path: path.resolve(rootPath, 'dist'),
     library: `${package.name}`,
     libraryTarget: "umd"

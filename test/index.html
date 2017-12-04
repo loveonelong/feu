@@ -5,18 +5,25 @@
   <title>Mocha</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mocha.css" />
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+
+  <!-- polyfill -->
+  <script src="../node_modules/babel-polyfill/browser.js"></script>
 
   <!-- lib -->
-  <script src="./../dist/feu-0.0.8.min.js"></script>
+  <script src="./../dist/feu.min.js"></script>
 </head>
 
 <body>
   <div id="mocha"></div>
-  <script src="mocha.js"></script>
-  <script>mocha.setup('bdd');</script>
+
+  <script src="../node_modules/mocha/mocha.js"></script>
   <script src="../node_modules/chai/chai.js"></script>
   <script>
+    // https://github.com/nathanboktae/mocha-phantomjs-core/issues/12
+    window.initMochaPhantomJS && window.initMochaPhantomJS()
+    mocha.setup('bdd')
+
     var expect = chai.expect
   </script>
 

@@ -34,9 +34,11 @@ Language:
 
 ## Usage
 
+> 为了兼容ie <= 11, chrome < 45,无论使用哪种方式引入，都需要提前引入babel-polyfill
+
 ### Browser
 
-下载`dist`目录下的`feu-[version].min.js`，遵循umd模块规范
+下载`/dist/feu.min.js`，遵循umd模块规范
 ```html
 <script src="feu.min.js"></script>
 <script>

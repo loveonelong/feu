@@ -22,11 +22,11 @@ const cookie = {
    * @return {String} 获取的cookie值，没有获取到时为空字符串''
    */
   get: (key) => {
+    let mKey = key + '='
     if (!document.cookie) return ''
     let cookieArray = document.cookie.split(';')
-    let mKey = key + '='
-    let cookieValue = cookieArray.find(cookieItem => cookieItem.trim().indexOf(mKey) === 0)
-    return cookieValue ? cookieItem.substring(mKey.length, cookieItem.length) : ''
+    let value = cookieArray.find(value => value.trim().indexOf(mKey) === 0)
+    return value ? value.substring(mKey.length, value.length) : ''
   },
 
   /**
