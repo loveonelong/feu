@@ -9,7 +9,7 @@ const cookie = {
    * @param {String} value - 值
    * @param {Number} expires - 有效时长,单位ms
    */
-  set: (key, value, expires) => {
+  set(key, value, expires) {
     let date = new Date()
     date.setTime(date.getTime() + expires)
     let expiresString = 'expires=' + date.toGMTString()
@@ -21,7 +21,7 @@ const cookie = {
    * @param {String} key - 标识
    * @return {String} 获取的cookie值，没有获取到时为空字符串''
    */
-  get: (key) => {
+  get(key) {
     let mKey = key + '='
     if (!document.cookie) return ''
     let cookieArray = document.cookie.split(';')
@@ -33,8 +33,8 @@ const cookie = {
    * @desc 删除cookie
    * @param {String} key - 标识
    */
-  delete: (key) => {
-    cookie.set(key, '', -1000)
+  delete(key) {
+    this.set(key, '', -1000)
   }
 }
 

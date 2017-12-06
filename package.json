@@ -7,7 +7,7 @@
     "url": "https://github.com/loveonelong/feu"
   },
   "license": "MIT",
-  "main": "dist/feu-0.0.8.min.js",
+  "main": "dist/feu-0.0.9.min.js",
   "scripts": {
     "build": "node build/build.js",
     "test": "./node_modules/.bin/mocha-phantomjs test/index.html"
