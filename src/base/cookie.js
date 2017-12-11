@@ -41,4 +41,4 @@ const cookie = {
 /**
  * @desc export
  */
-module.exports = cookie
+export default cookie

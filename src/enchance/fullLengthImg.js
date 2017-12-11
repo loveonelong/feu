@@ -29,4 +29,4 @@ const fullLengthImg = (el, src, callback) => {
   }
 }
 
-module.exports = fullLengthImg
+export default fullLengthImg

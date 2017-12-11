@@ -62,4 +62,4 @@ const pasteTextOnly = (el) => {
 /**
  * @desc exports
  */
-module.exports = pasteTextOnly
+export default pasteTextOnly

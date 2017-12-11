@@ -1,13 +1,15 @@
+
 /* base */
-const cookie = require('./src/cookie')
+import cookie from './src/base/cookie'
+import type from './src/base/type'
 
 /* enchance */
-const $fullLengthImg = require('./src/enchance/fullLengthImg')
-const $pasteTextOnly = require('./src/enchance/pasteTextOnly')
+import $fullLengthImg from './src/enchance/fullLengthImg'
+import $pasteTextOnly from './src/enchance/pasteTextOnly'
 
-
-module.exports = {
+export {
   cookie,
+  type,
   $fullLengthImg,
   $pasteTextOnly
 }
