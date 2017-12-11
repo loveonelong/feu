@@ -1,13 +1,13 @@
 {
   "name": "feu",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "onelong",
   "repository": {
     "type": "git",
     "url": "https://github.com/loveonelong/feu"
   },
   "license": "MIT",
-  "main": "dist/feu-0.0.9.min.js",
+  "main": "dist/feu.min.js",
   "scripts": {
     "build": "node build/build.js",
     "test": "./node_modules/.bin/mocha-phantomjs test/index.html"

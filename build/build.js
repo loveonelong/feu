@@ -41,10 +41,10 @@ new Promise((resolve, reject) => {
 }).then(() => {
 
     // 修改package.json中的mian
-    let mPackage = package
-    mPackage.main = `dist/${mPackage.name}-${mPackage.version}.min.js`
-    fs.writeFileSync(packagePath, JSON.stringify(mPackage, null, 2), { flag: 'w' })
-    console.log(chalk.cyan('  Build complete.\n'))
+    // let mPackage = package
+    // mPackage.main = `dist/${mPackage.name}-${mPackage.version}.min.js`
+    // fs.writeFileSync(packagePath, JSON.stringify(mPackage, null, 2), { flag: 'w' })
+    // console.log(chalk.cyan('  Build complete.\n'))
 }).catch((err) => {
     throw err
 })
