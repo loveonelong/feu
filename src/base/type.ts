@@ -1,5 +1,5 @@
 /**
- * @desc  判断数据类型
+ * 判断数据类型
  * @param {any} any 
  * @returns {string} 数据类型,小写
  */

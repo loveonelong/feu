@@ -1,7 +1,7 @@
 describe('cookie test', function () {
   describe('feu.cookie', function () {
-    it('set cookie without error, key is "test",value is "123456",expries is "100000"ms', function () {
-      feu.cookie.set('test', '123456', 100000)
+    it('set cookie without error, key is "test",value is "123456",expries is "365"day', function () {
+      feu.cookie.set('test', '123456', 365)
     })
 
     it('find cookie "test" to equal "123456"', function () {

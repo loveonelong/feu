@@ -1,6 +1,5 @@
 /**
- * @desc cookie 相关工具
- * 
+ * cookie 工具类
  */
 class Cookie {
 
@@ -11,7 +10,7 @@ class Cookie {
   constructor() { }
 
   /**
-   * @desc 设置cookie
+   * 设置cookie
    * @param {string} key - 标识
    * @param {string} value - 值
    * @param {number} expires - 有效时长,单位天
@@ -20,13 +19,13 @@ class Cookie {
     if (typeof key !== 'string') return
     if (typeof expires != 'number') return
     let date = new Date()
-    date.setTime(date.getDate() + expires)
+    date.setDate(date.getDate() + expires)
     let expiresString = 'expires=' + date.toUTCString()
     document.cookie = key + '=' + value + '; ' + expiresString
   }
 
   /**
-   * @desc 获取cookie
+   * 获取cookie
    * @param {string} key - 标识
    * @return {string} [没有获取到|key的类型不为string]返回空字符串
    */
@@ -43,7 +42,7 @@ class Cookie {
   }
 
   /**
-   * @desc 删除cookie
+   * 删除cookie
    * @param {string} key - 标识
    */
   del(key: string): void {
