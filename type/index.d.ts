@@ -22,14 +22,15 @@ declare module "feu" {
      * @param {string} key - 标识
      * @returns {void}
      */
-    function del (key: string): void
+    function del(key: string): void
 
   }
 
   /**
-   * @desc  js数据类型的判断
+   * @desc 判断数据类型
    * @param {any} any 
-   * @returns {string} obj的数据类型,小写
+   * @returns {string} 数据类型,小写
    */
   export function type(any: any): string
+
 }

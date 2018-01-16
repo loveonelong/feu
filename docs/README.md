@@ -3,6 +3,9 @@
 > Font-End Utils 前端工具类库
 
 <p>
+<a href="https://github.com/loveonelong/feu">
+<img src="https://travis-ci.org/loveonelong/feu.svg?branch=master">
+</a>
 <a href="https://www.npmjs.com/package/feu">
 <img src="https://img.shields.io/npm/l/feu.svg?style=flat-square" alt>
 </a>

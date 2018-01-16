@@ -15,7 +15,6 @@ class Cookie {
    * @param {string} key - 标识
    * @param {string} value - 值
    * @param {number} expires - 有效时长,单位天
-   * 
    */
   set(key: string, value: string, expires: number): void {
     if (typeof key !== 'string') return
@@ -30,7 +29,6 @@ class Cookie {
    * @desc 获取cookie
    * @param {string} key - 标识
    * @return {string} [没有获取到|key的类型不为string]返回空字符串
-   * 
    */
   get(key: string): string {
 
@@ -47,10 +45,9 @@ class Cookie {
   /**
    * @desc 删除cookie
    * @param {string} key - 标识
-   * 
    */
   del(key: string): void {
-    this.set(key, '', -1000)
+    this.set(key, '', -1)
   }
 }
 

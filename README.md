@@ -41,23 +41,14 @@ Language:
 <script src="//cdn.bootcss.com/babel-polyfill/7.0.0-beta.3/polyfill.min.js"></script>
 ```
 
-### Browser
-
-下载`/dist/feu.min.js`，遵循umd模块规范
-
-```html
-<script src="feu.min.js"></script>
-<script>
-  feu.doSomething()
-</script>引入项目
-```
-
 ### Npm
+
+> 推荐使用，以便获得ide的智能提示
 
 Install（注意，仅能用于前端项目）
 
 ```shell
-$ npm install --save-dev feu
+$ npm install --save feu
 ```
 
 Include
@@ -67,11 +58,15 @@ var feu = require('feu')
 feu.doSomething()
 ```
 
-如果你在项目里使用了es6/7语法，并配置了babel，推荐下面的写法，以便于获得IDE的提示
+### Browser
 
-```javascript
-import feu from 'feu/main'
-feu.doSomething()
+下载`/dist/feu.min.js`，遵循umd模块规范
+
+```html
+<script src="feu.min.js"></script>
+<script>
+  feu.doSomething()
+</script>引入项目
 ```
 
 ## Dev
