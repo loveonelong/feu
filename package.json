@@ -1,6 +1,6 @@
 {
   "name": "feu",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "onelong",
   "repository": {
     "type": "git",
@@ -8,21 +8,24 @@
   },
   "license": "MIT",
   "main": "dist/feu.min.js",
+  "types": "type/index.d.ts",
   "scripts": {
+    "dev": "node build/dev.js",
+    "start": "node build/dev.js",
     "build": "node build/build.js",
     "test": "./node_modules/.bin/mocha-phantomjs test/index.html"
   },
+  "dependencies": {
+    "typescript": "^2.6.2"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "copy": "^0.3.1",
     "mocha": "^4.0.1",
     "mocha-phantomjs": "^4.1.0",
     "ora": "^1.3.0",
     "rimraf": "^2.6.2",
+    "ts-loader": "^3.2.0",
     "webpack": "^3.8.1"
   }
 }

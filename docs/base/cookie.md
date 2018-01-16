@@ -43,11 +43,11 @@
   ```
 
 
-## feu.cookie.delete(key)
+## feu.cookie.del(key)
 
 - Desc
 
-  删除某个cookie
+  删除cookie
 
 - Params
 

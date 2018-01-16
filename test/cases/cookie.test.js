@@ -10,7 +10,7 @@ describe('cookie test', function () {
 
     it('deleting cookie "test" without error,then find it to equal ""', function () {
       // delete
-      feu.cookie.delete('test')
+      feu.cookie.del('test')
 
       expect(feu.cookie.get('test')).to.equal('')
     })

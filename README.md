@@ -34,11 +34,17 @@ Language:
 
 ## Usage
 
-> 为了兼容ie <= 11, chrome < 45,无论使用哪种方式引入，都需要提前引入babel-polyfill
+> 为了兼容ie <= 11, chrome < 45,无论使用哪种方式引入，都需要在项目里提前引入babel-polyfill
+
+```html
+<!-- example -->
+<script src="//cdn.bootcss.com/babel-polyfill/7.0.0-beta.3/polyfill.min.js"></script>
+```
 
 ### Browser
 
 下载`/dist/feu.min.js`，遵循umd模块规范
+
 ```html
 <script src="feu.min.js"></script>
 <script>
@@ -64,7 +70,7 @@ feu.doSomething()
 如果你在项目里使用了es6/7语法，并配置了babel，推荐下面的写法，以便于获得IDE的提示
 
 ```javascript
-const feu = require('feu/main')
+import feu from 'feu/main'
 feu.doSomething()
 ```
 
