@@ -1,11 +1,11 @@
 /**
  * cookie 工具类
  */
-class Cookie {
+class __Cookie {
 
   /**
    * Creates an instance of Cookie.
-   * @memberof Cookie
+   * @memberof __Cookie
    */
   constructor() { }
 
@@ -50,6 +50,6 @@ class Cookie {
   }
 }
 
-const cookie = new Cookie()
+const cookie = new __Cookie()
 
 export default cookie
