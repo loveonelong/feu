@@ -1,36 +1,63 @@
+
+interface Document {
+  [k: string]: any
+}
+
+interface AnyJSON {
+  [k: string]: any
+}
+
 declare module "feu" {
   export namespace cookie {
-    /**
-     * @desc 设置cookie
-     * @param {string} key - 标识
-     * @param {string} value - 值
-     * @param {number} expires - 有效时长,单位天
-     * @returns {void}
-     */
-    function set(key: string, value: string, expires: number): void
 
     /**
-     * @desc 获取cookie
-     * @param {string} key - 标识
-     * @return {string} [没有获取到|key的类型不为string]返回空字符串
+     * 设置cookie
      * 
+  1  * @param {string} key 
+     * @param {string} value 
+     * @param {AnyJSON} [options={}] 
+     * @returns {boolean} 
      */
-    function get(key: string): string
+    function set(key: string, value: string, options: AnyJSON): boolean
 
     /**
-     * @desc 删除cookie
-     * @param {string} key - 标识
-     * @returns {void}
+     * 获取某个cookie
+     * 
+     * @param {string} key 
+     * @returns {(string | null)}
+     * @memberof __Cookie
      */
-    function del(key: string): void
+    function get(key: string): string | null
 
+    /**
+     * 删除某条cookie
+     * 
+     * @param {string} key 
+     * @param {AnyJSON} [options={}] 
+     * @returns {boolean} 
+     */
+    function del(key: string, options: AnyJSON): boolean
+
+    /**
+     * 检测cookie中是否存在某个key
+     * 
+     * @param {string} key 
+     * @returns {boolean}
+     */
+    function hasKey(key: string): boolean
+
+    /**
+     * 返回cookie中所有的key
+     * 
+     * @returns {Array<string>} 
+     * @memberof __Cookie
+     */
+    function keys(): Array<string>
   }
-
   /**
    * @desc 判断数据类型
    * @param {any} any 
    * @returns {string} 数据类型,小写
    */
   export function type(any: any): string
-
 }

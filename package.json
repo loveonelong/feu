@@ -1,6 +1,6 @@
 {
   "name": "feu",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": "onelong",
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
     "test": "./node_modules/.bin/mocha-phantomjs test/index.html"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "typescript": "^2.6.2"
   },
   "devDependencies": {

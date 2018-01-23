@@ -22,7 +22,6 @@ let config = {
         test: /\.ts$/,
         loader: 'ts-loader',
         include: [path.resolve(__dirname, '../src')]
-
       }
     ]
   },
@@ -38,7 +37,6 @@ let config = {
 
 if (process.env.NODE_ENV === 'production') {
   config.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   config.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
