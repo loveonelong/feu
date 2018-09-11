@@ -1,5 +1,7 @@
 # FEU
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/loveonelong/feu.svg)](https://greenkeeper.io/)
+
 > Font-End Utils 前端工具类库
 
 <p>
